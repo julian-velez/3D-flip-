@@ -1,0 +1,106 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background:rgb(85, 85, 85);
+}
+
+.wrapper {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 300px;
+  height: 500px;
+  perspective: 950px;
+}
+
+.container {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+  text-align: center;
+}
+
+#box-1 {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #083b54 30%,   #ca9800 100%);
+  z-index: 300;
+  box-shadow: 0px 20px 100px #555;
+}
+
+#box-2 {
+  background: linear-gradient(to bottom,  #868686 10%,  #c00e30 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: 100%;
+  z-index: 0;
+}
+
+#box-3 {
+  left: -100%;
+  z-index: 0;
+ 
+  background: linear-gradient(to bottom,  #a50044 30%, #004d98 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .8s all ease;
+  z-index: 400;
+}
+.img_box{
+
+  width: 180px;
+  margin: auto;
+
+}
+.img_box img{
+
+width: 100%;
+  margin-top: 30px;
+margin-bottom: 20px;
+}
+
+
+
+
+h1{
+
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+h2{
+
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(179, 179, 179);
+  font-size:15px;
+}
+
+.text_box h3{
+
+  color: white
+
+ }
+
+ .text_box p{
+
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 25px;
+  font-weight: normal;
+ }
